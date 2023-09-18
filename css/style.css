@@ -1,6 +1,3 @@
-*{
-    border: red solid 2px;
-}
 
 .Spielregel_Bild{
     max-width: 512px;
@@ -60,7 +57,7 @@
 
     width: 40% ;
     height: 100px;
-
+    
 }
 
 .SpielerSymbole{
@@ -68,3 +65,44 @@
     width: 100%;
     height: 100px;
 }
+
+.ComputerSymbole{
+    width: 20%;
+    height: 100px;
+    
+}
+
+.Computer_Bilder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#EndMessage{
+
+    font-weight: 700;
+    font-size: 50px;
+
+}
+body, html {
+    height: 80%;
+    margin: 0;
+  }
+  
+.parallax {
+    /* The image used */
+    background-image: url(../img/the-big-bang-theory-living-room.jpg);
+  
+    /* Full height */
+    height: 80%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+

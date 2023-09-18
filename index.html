@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" >
+    
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/javascript.js"></script>
-    
 
 <head>
 <meta charset="utf-8">
@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div class="parallax" ></div>
+
     <div class="Titel"><h1>Schere Stein Papier Echse Spock</h1></div>
     <div class="Spielregeln_container"><img onclick="displaystuff()" src="./img/Lösungs_Bild.png" alt="Lösungs_Bild zu den Spielregeln" class="Spielregel_Bild"></div>
     <div class="Spielregeln_text"><p>Die Regeln sind auch schnell erklärt: Schere schneidet Papier, Papier bedeckt Stein, Stein zerquetscht Echse, Echse vergiftet Spock, Spock zertrümmert Schere, Schere köpft Echse, Echse frisst Papier, Papier widerlegt Spock, Spock verdampft Stein, Stein zertrümmert Schere</p></div>
@@ -17,17 +19,22 @@
         <div class="Spielerseite" >
             <h2 class="Titel">Spieler</h2>
             <div class="Spielerseite_Bilder">
-                <div ><img src="./img/Schere" alt="Das Bild einer schere" class="SpielerSymbole"></div>
-                <div ><img src="./img/Stein" alt="Das Bild eines Steins" class="SpielerSymbole"></div>
-                <div ><img src="./img/Papier" alt="Das Bild  von Papier" class="SpielerSymbole"></div>
-                <div ><img src="./img/Echse" alt="Das Bild einer Echse" class="SpielerSymbole"></div>
-                <div ><img src="./img/Spock" alt="Das Bild eines Spock" class="SpielerSymbole"></div>
+                <div ><img onclick="playersChoice('Schere')" src="./img/Schere" alt="Das Bild einer schere" class="SpielerSymbole"></div>
+                <div ><img onclick="playersChoice('Stein')" src="./img/Stein" alt="Das Bild eines Steins" class="SpielerSymbole"></div>
+                <div ><img onclick="playersChoice('Papier')" src="./img/Papier" alt="Das Bild  von Papier" class="SpielerSymbole"></div>
+                <div ><img onclick="playersChoice('Echse')" src="./img/Echse" alt="Das Bild einer Echse" class="SpielerSymbole"></div>
+                <div ><img onclick="playersChoice('Spock')" src="./img/Spock" alt="Das Bild eines Spock" class="SpielerSymbole"></div>
             </div>   
         </div>
         <div class="Computerseite">
             <h2 class="Titel">Computer</h2>
-            <div ><img id="someImage"  ></div>
+            <div class="Computer_Bilder"><img  class="ComputerSymbole" id="someImage"  ></div>
         </div>
     </div>
+    <div class="Titel" id="EndMessage"></div>
+
+    <div class="parallax"></div>
+
+   
 </body>
 </html>
